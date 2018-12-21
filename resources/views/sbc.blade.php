@@ -154,7 +154,7 @@ $sbcs = DB::table('sbc')->orderBy('id', 'desc')->get(); ?>
                         </thead>
                         <tbody>
                         <?php foreach ($sbcs as $sbc) { $class = ''; ?>
-                        <?php $repeatUrl = "{{ url('/sbcpurchaser?buyList='). $sbc->url . '&percentages=' . $sbc->percentages . '&incrementOffer=' . $sbc->incrementBy; }}" ?>
+                        <?php $repeatUrl = url('/sbcpurchaser?buyList='. $sbc->url . '&percentages=' . $sbc->percentages . '&incrementOffer=' . $sbc->incrementBy) ?>
                         <?php if ($sbc->bought == $sbc->squadCount) $class = 'table-success'; ?>
                         <tr class="<?php echo $class; ?>">
                             <td><a target="_blank" href="<?php echo $sbc->url; ?>"><?php echo $sbc->name; ?></a></td>
