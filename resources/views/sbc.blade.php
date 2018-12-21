@@ -75,10 +75,10 @@ $sbcs = DB::table('sbc')->orderBy('id', 'desc')->get(); ?>
                     <table class="table table-bordered table-striped">
                         <thead>
                         <tr>
-                            <th>Nome</th>
-                            <th>Soluzioni</th>
+                            <th>Name</th>
+                            <th>Solutions</th>
                             <th>Overrall</th>
-                            <th>Costo</th>
+                            <th>Cost</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -115,7 +115,7 @@ $sbcs = DB::table('sbc')->orderBy('id', 'desc')->get(); ?>
                             <br/>
                             <small id="percentages-help">By checking this option you will make the purchase of players
                                 longer, but you could make it more profitable. Basically, the bot acquits players at a
-                                futbol or lower price.
+                                futbin or lower price.
                             </small>
                         </div>
                         <div class="form-group">
