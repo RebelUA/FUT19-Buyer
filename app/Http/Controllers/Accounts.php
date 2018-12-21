@@ -93,9 +93,9 @@ class Accounts extends CrudController
         $this->crud->addField([
             'name' => 'password',
             'label' => 'Password',
+            'type' => 'password',
             'attributes' => [
-                'placeholder' => 'Your EA account password',
-                'type' => 'password'
+                'placeholder' => 'Your EA account password'
             ]
         ]);
         $this->crud->addField([
