@@ -59,12 +59,12 @@ class Players extends CrudController
         ]);
         $this->crud->addField([
             'name' => 'ps_buy_bin',
-            'label' =>  'Prezzo acquisto',
+            'label' =>  'Purchase price',
             'type' => 'text'
         ]);
         $this->crud->addField([
             'name' => 'ps_sell_bin',
-            'label' =>  'Prezzo vendita',
+            'label' =>  'Selling price',
             'type' => 'text'
         ]);
         $this->crud->addField([
