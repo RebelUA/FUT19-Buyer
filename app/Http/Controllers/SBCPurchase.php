@@ -54,13 +54,13 @@ class SBCPurchase extends Controller {
         $solution_url = $_GET['buyList'];
         $percentages = false;
         if(Setting::get('sbc_mode') != 1){
-            $telegram->sendMessage('*'.Setting::get('account_name')."* SBC purchaser non funziona se la SBC MODE è impostata su 1. Vai su settings e impostala su enabled.");
+            $telegram->sendMessage('*'.Setting::get('account_name')."* SBC purchaser does not work if the SBC MODE is set to 1. Go to settings and set it to enabled.");
             Log::info('Abort for autobuyer status active. Switch it off on SETTINGS tab.');
             abort(403);
         };
         $this->account = Accounts::where('status', '1')->whereNotNull('phishingToken')->first();
         if(!$this->account) {
-            Log::info('Account non trovato');
+            Log::info('Account not found');
             abort(403);
         }
         Accounts::find($this->account->id)->update([
