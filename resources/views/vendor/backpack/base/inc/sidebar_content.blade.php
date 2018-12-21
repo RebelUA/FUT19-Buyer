@@ -16,10 +16,10 @@
     <a href="#"><i class="fa fa-futbol-o"></i> <span>SBC</span> <i class="fa fa-angle-left pull-right"></i></a>
     <ul class="treeview-menu">
         <li>
-            <a href="{{ url(config('backpack.base.route_prefix', 'admin') . '/used') }}"><span>Most used players</span></a>
+            <a href="{{ url('/used') }}"><span>Most used players</span></a>
         </li>
         <li>
-            <a href="{{ url(config('backpack.base.route_prefix', 'admin') . '/used?buyList') }}"><span>Buy SBC Players</span></a>
+            <a href="{{ url('/used?buyList') }}"><span>Buy SBC Players</span></a>
         </li>
     </ul>
 </li>
