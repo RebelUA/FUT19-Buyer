@@ -80,7 +80,7 @@ class Accounts extends CrudController
                 'PS4' => 'Playstation 4',
                 'PC' => 'PC'
             ],
-            'default' => 'XBOX',
+            'default' => 'PS4',
             'inline' => true
         ]);
         $this->crud->addField([
@@ -94,7 +94,8 @@ class Accounts extends CrudController
             'name' => 'password',
             'label' => 'Password',
             'attributes' => [
-                'placeholder' => 'Your EA account password'
+                'placeholder' => 'Your EA account password',
+                'type' => 'password'
             ]
         ]);
         $this->crud->addField([
